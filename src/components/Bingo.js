@@ -84,8 +84,12 @@ class Bingo extends React.Component {
     }
 
     if(winLines.length > this.state.winLines){
+      //sound effect
+      const audio = new Audio("./assets/wubalubadubdub.mp3")
+      audio.play()
+      //confetti effect
       this.setState({toggle: true})
-      setInterval(()=>{this.setState({toggle: false})}, 3000)
+      setTimeout(()=>{this.setState({toggle: false})}, 3000)
     }
       
 
