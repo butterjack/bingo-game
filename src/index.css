@@ -147,6 +147,16 @@ body::after {
   clear: both;
 }
 
+.card-info {
+  display: flex;
+  gap: 3em;
+  align-items: baseline;
+}
+.bingo-num {
+  color: aqua;
+  padding: 0 0.5em;
+}
+
 /**************login**************/
 .login-page {
   display: flex;

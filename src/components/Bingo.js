@@ -127,9 +127,12 @@ class Bingo extends React.Component {
           squares={this.state.squares}
           onClick={(i) => this.handleClick(i)}
         />
-        <button className="new-game" onClick={() => this.newGame()}>
-          New Card
-        </button>
+        <div className='card-info'>
+          <button className="new-game" onClick={() => this.newGame()}>
+            New Card
+          </button>
+          <p> You have <span className='bingo-num'>{this.state.winLines}</span> bingos</p>
+        </div>
       </div>
     )
   }
